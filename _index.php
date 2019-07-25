@@ -137,7 +137,14 @@
                                                         <form action="addToCart.php" method="post">
 
                                                             <div class="col-md-12 amount">
-                                                                <label for="text">Quantity<input type="text" name="Quantity" value="1"></label>
+                                                                <label for="text">Quantity
+                                                                <select name="Quantity" class="quantity">
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                </select>
+                                                            
+                                                                </label>
                                                             </div>
                                                             <input type="hidden" name="product-key" value="<?php echo $key ?>">
 

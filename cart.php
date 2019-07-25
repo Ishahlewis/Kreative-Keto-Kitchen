@@ -115,7 +115,7 @@
                                                 <button><i class="fas fa-arrow-circle-left"></i><a href="index.html"> Continue shopping</a></button>                        
                                             </div>
                                         </div>
-                                        <div class="checkout">
+                                        <div class="checkout" action="processCheckout.php" method="post">
                                             <h2>Checkout</h2>
                                             <p>Enter your email address. This address will be used to send your status updates.</p>
                                             <form action="submit">
