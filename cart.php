@@ -115,10 +115,10 @@
                                                 <button><i class="fas fa-arrow-circle-left"></i><a href="index.html"> Continue shopping</a></button>                        
                                             </div>
                                         </div>
-                                        <div class="checkout" action="processCheckout.php" method="post">
+                                        <div class="checkout">
                                             <h2>Checkout</h2>
                                             <p>Enter your email address. This address will be used to send your status updates.</p>
-                                            <form action="submit">
+                                            <form  action="">
                                                 <div class="row">
                                                     <div class="form-group col-md-12">
                                                         <input type="email" name="email" class="form-control" placeholder="Email address" autocomplete="off">

@@ -552,12 +552,14 @@
 	// Cart sections
 
 	$(function(){
-		$('.layer-1').on('click', function(){
+		$('.layer-1 [type=submit]').on('click', function(e){
+			e.preventDefault();
 			$('.wrapper.one').removeClass('top');
 			$('.wrapper.two').addClass('top');
 		});
 
-		$('.layer-2').on('click', function(){
+		$('.layer-2').on('click', function(e){
+			e.preventDefault();
 			$('.wrapper.two').removeClass('top');
 			$('.wrapper.three').addClass('top');
 		});
