@@ -81,7 +81,7 @@
 
                         <div class="wrapper">
 
-                            <!-- <div class="overview">
+                            <div class="overview">
                                     <h3>Your order has been sent through</h3>
 
                                     <div class="order">
@@ -102,9 +102,9 @@
                                         <div class="back-to-shop wrap-6">
                                             <button><i class="fas fa-arrow-circle-left"></i><a href="index.html"> Continue shopping</a></button>
                                         </div>
-                            </div> -->
+                            </div>
 
-                            <div class="my-cart">
+                         <div class="my-cart"> 
                                 <h2>My Cart</h2>
                                 <div class="cart-items">
                                     <div>
@@ -138,7 +138,7 @@
                                 <div class="checkout one top">
                                     <h2>Checkout</h2>
                                     <p>Enter your email address. This address will be used to send your status updates.</p>
-                                    <form action="submit">
+                                    <form action="#" class="form1" method="get">
                                         <div class="row">
                                             <div class="form-group col-md-12">
                                                 <input type="email" name="email" class="form-control" placeholder="Email address" autocomplete="off">
@@ -152,13 +152,13 @@
                                         </div>
                                     </form>
                                 </div> 
-                             <div class="checkout two ">
+                             <div class="checkout two">
                                     <div class="head">
-                                        <button><i class="fas fa-arrow-circle-left prev"></i></button>
-                                        <h2>Contact Details</h2>    
-                                    </div>
+                                            <button><i class="fas fa-arrow-circle-left prev two"></i></button>
+                                            <h2 class="h2-head">Contact</h2>    
+                                        </div>
                                     <p>Please enter your contact details</p>                  
-                                    <form action="submit" id="validForm">
+                                    <form action="submit" id="validForm" class="form2">
                                         <div class="row phone-name">
                                             <div class="form-group col-md-12">
                                                 <input type="text" name="name" class="form-control" id="cl" placeholder="Full name" autocomplete="off">
@@ -179,33 +179,36 @@
                                     </form> 
                                 </div> 
 
-                                <div class="checkout radio ">
-                                        <h2>Shipping</h2>
+                                <div class="checkout radio">
+                                        <div class="head">
+                                            <button><i class="fas fa-arrow-circle-left prev radio"></i></button>
+                                            <h2 class="h2-head">Shipping</h2>    
+                                        </div>
                                         <div class="choose">
-                                            <div class="delivery" data-choice="delivery ">Delivery</div>
-                                            <div class="pick" data-choice="pick-up">Pick up</div>
+                                            <div class="delivery" data-choice="delivery "><i class="fas fa-truck"></i></div>
+                                            <div class="pick" data-choice="pick-up"><i class="fas fa-store"></i></div>
                                         </div>
                                         <div class="deliver-wrap">
                         
                                             <p>All loaf orders are sent Monday - Thursday for next day delivery. No Saturday delivery (if you are desperate this can be arranged by request but will require additional freight charges). Last orders and payment for Friday delivery 5pm Wednesday. Any orders placed after this will be despatched Monday for Tuesday delivery. Please make payment and email or txt a screenshot as I don’t have time for chasing. No rural shipping as it takes over two days.</p>
                                             <h5>Please select your shipping option.</h5>
                                                 
-                                        <div class="radio-wrap">
+                                        <form class="radio-wrap form3">
                                             <div class="north">
                                                 <h4>North Island</h4>
-                                                <label for="radio" data-target="delivery" data-price="8.50"><input type="radio">North Island | 1 loaf - $8.50 </label><br>
-                                                <label for="radio" data-target="delivery"  data-price="13.50"><input type="radio">North Island | 2 loaves - $13.50 </label><br>
-                                                <label for="radio"  data-target="delivery"  data-price="16.50"><input type="radio">North Island | 4 loaves - $16.50 </label><br>
-                                                <label for="radio" data-target="delivery"  data-price="7.50"><input type="radio">Auckland | 2 - 4 loaves - $7.50</label><br>
-                                                <label for="radio" data-target="delivery"  data-price="8.50"><input type="radio">Whangarei/Hamilton | 2 - 4 loaves - $8.50</label>
+                                                <label for="radio" data-target="delivery" data-price="8.50"><input name="delivery" value="10" type="radio">North Island | 1 loaf - $8.50 </label><br>
+                                                <label for="radio" data-target="delivery"  data-price="13.50"><input name="delivery" value="10" type="radio">North Island | 2 loaves - $13.50 </label><br>
+                                                <label for="radio"  data-target="delivery"  data-price="16.50"><input name="delivery" value="10" type="radio">North Island | 4 loaves - $16.50 </label><br>
+                                                <label for="radio" data-target="delivery"  data-price="7.50"><input name="delivery" value="10" type="radio">Auckland | 2 - 4 loaves - $7.50</label><br>
+                                                <label for="radio" data-target="delivery"  data-price="8.50"><input name="delivery" value="10" type="radio">Whangarei/Hamilton | 2 - 4 loaves - $8.50</label>
                                             </div>
                                             <div class="south">
                                                 <h4>South Island</h4>
-                                                <label for="radio" data-target="delivery"  data-price="9.50"><input type="radio">South Island | 1 loaf - $9.50</label><br>
-                                                <label for="radio" data-target="delivery"  data-price="17.50"><input type="radio">South Island | 2 loaves - $17.50</label><br>
-                                                <label for="radio" data-target="delivery"  data-price="25"><input type="radio">South Island | 2 - 6 loaves - $25.00/$30.00</label>
+                                                <label for="radio" data-target="delivery"  data-price="9.50"><input name="delivery" value="10" type="radio">South Island | 1 loaf - $9.50</label><br>
+                                                <label for="radio" data-target="delivery"  data-price="17.50"><input name="delivery" value="10" type="radio">South Island | 2 loaves - $17.50</label><br>
+                                                <label for="radio" data-target="delivery"  data-price="25"><input name="delivery" value="10" type="radio">South Island | 2 - 6 loaves - $25.00/$30.00</label>
                                             </div>
-                                        </div> 
+                                        </form> 
                                         <p>To ship 2 - 6 loaves to the South Island, leave a message and I can get back to you on shipping costs.</p>
                                         </div>
         
@@ -219,14 +222,13 @@
                                                 <input type="submit" value="Continue">
                                             </div>
                                         </div>
-                                        <div class="back-to-prev three">
-                                            <button><i class="fas fa-arrow-circle-left"></i><a href="#"> Back</a></button>                        
-                                        </div>
-                                        
                                 </div>
 
                                 <div class="checkout four">
-                                    <h2>Payment</h2>         
+                                    <div class="head">
+                                        <button><i class="fas fa-arrow-circle-left prev four"></i></button>
+                                        <h2 class="h2-head">Payment</h2>    
+                                    </div>       
                                     <div class="pay">
                                         <h4>Payment method</h4>   
                                         <h6>Internet Bank Transfer - Please pay to 020152 - 0046534 - 83</h6>
@@ -234,7 +236,7 @@
                                         <p>
                                     </div>
                                     <h4>Billing Address</h4>
-                                        <form action="submit" id="validForm">
+                                        <form action="submit" id="validForm" class="form4">
                                                 <div class="form-group col-md-12">
                                                     <input type="text" name="subject" class="form-control" placeholder="Street Address">
                                                 </div>
@@ -250,12 +252,9 @@
                                                     </div>
                                                 </div>
                                         </form>
-                                    <div class="back-to-prev two">
-                                        <button><i class="fas fa-arrow-circle-left"></i><a href="#"> Back</a></button>                        
-                                    </div>
                                 </div> 
                                 
-                            </div>
+                            </div> 
 
                         </div>
 

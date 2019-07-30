@@ -2,9 +2,17 @@
 
 	require('functions.php');
 	
+	// print_r($_GET);
 
+	// Array ( [email] => [name] => [text] => [message] => dd [delivery] => 10 [subject] => ee )
+	$data = $_GET;
 	$adminEmail = 'ishahlewis@gmail.com';
-	$customerEmail = $_POST['email'];
+	$customerEmail = $data['email'];
+	$name = $data['name'];
+	$text = $data['text'];
+	$message = $data['message'];
+	$delivery = $data['delivery'];
+	$subject = $data['subject'];
 
 
 	$msg = "Thanks for your order\nSecond line of text\n";
@@ -22,20 +30,23 @@
 
 	$msg .= ' Total is $' .number_format($total) ."\n";
 
-	// use wordwrap() if lines are longer than 70 characters
+	$msg .= $message ."\n";
+	$msg .= $delivery ."\n";
+
+	// // use wordwrap() if lines are longer than 70 characters
 	$msg = wordwrap($msg,70);
 
-	// send email
+	// // send email
 	mail($customerEmail.','.$adminEmail,"Order",$msg);
 
-	echo $customerEmail.','.$adminEmail;
+	// echo $customerEmail.','.$adminEmail;
 	echo $msg;
 
 	unset($_SESSION['cart']);
 
 
 
-	//header('Location:notice.php');
+	header('Location:index.php');
 
 	
  ?>

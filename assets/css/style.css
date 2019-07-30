@@ -609,15 +609,7 @@ input[type="submit"]:hover {
 
 
 .wrapper .top{
-    z-index: 100;
-}
-
-.wrapper .hide{
-    z-index: 0;
-}
-
-.show{
-    opacity: 1;
+    z-index: 100 !important;
 }
 
 
@@ -633,7 +625,7 @@ input[type="submit"]:hover {
     animation: fadeIn 2s ease forwards;
     margin-top: 2em;
     /* border: 2px solid red; */
-    padding: 1em;
+    position: relative;
 }
 
 
@@ -645,9 +637,9 @@ input[type="submit"]:hover {
     padding-right: 2em;
     border-right: 2px dotted black;
     position: relative;
-    padding: 1em;
-    z-index: 100;
+    z-index: 50;
     background-color: white;
+    padding:1em;
 }
 
 .my-cart .cart-items{
@@ -688,6 +680,7 @@ input[type="submit"]:hover {
     flex: 1 0 40%;
     text-align: left;
     position: relative;
+    z-index: 50;
 }
 
 .checkout{
@@ -709,8 +702,9 @@ input[type="submit"]:hover {
     background-color: white;
     text-align: left;
     padding: 1em;
-    /* border:1px solid blue; */
+    border:1px solid blue;
     position: relative;
+    position: absolute;
 }
 
 .overview .order,.awaiting,.send{
@@ -750,17 +744,22 @@ input[type="submit"]:hover {
 .fa-arrow-circle-left.prev{
     opacity:1;
     color:#FA821A;
-    font-size: 3em;
+    font-size: 2.5em;
+    margin-right: .2em;
 }
 
 .fa-arrow-circle-left.prev:hover{
     color: black;
+}
+.head .h2-head{
+    margin-bottom: 0;
 }
 .head{
     /* border: 1px solid red; */
     display: flex;
     justify-items: center;
     align-content: center;
+    margin-bottom: 1em;
 }
 
 
@@ -768,13 +767,14 @@ input[type="submit"]:hover {
 
 .choose{
     position: relative;
-    height: 2em;
+    height: 3em;
     margin-bottom: 1em;
 }
+
 .pick,.delivery { 
     position: absolute;
     width: 6em;
-    height: 2em;
+    height: 3em;
     border-radius: .5em;
     text-align: center;
     padding: 1em;
@@ -945,13 +945,13 @@ input[type="submit"]:hover {
     border-radius: 4px;
     /* transition: height 1s cubic-bezier(0.77, 0, 0.175, 1); */
 }
-/* .ms-hero__image .box-cover {
+.ms-hero__image .box-cover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     -webkit-backface-visibility:hidden;
             backface-visibility:hidden;
-}
+}/*
 .cover-closed .ms-hero__title-poster .ms-hero__title {
     margin-top: 25vh;
     margin-bottom: 10vh;
