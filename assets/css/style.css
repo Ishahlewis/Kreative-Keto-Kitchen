@@ -229,6 +229,9 @@ input[type="submit"] {
 input[type="submit"]:hover {
     color: #fff;
 }
+input[type="submit"]:focus-within{
+    outline: none;
+}
 /* Burger button */
 .nav__btn {
     z-index: 10;
@@ -616,7 +619,7 @@ input[type="submit"]:hover {
 .wrapper{
     width: 70%;
     margin:0 auto;
-    height: 45em;
+    height: 48em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -625,6 +628,7 @@ input[type="submit"]:hover {
     animation: fadeIn 2s ease forwards;
     margin-top: 2em;
     /* border: 2px solid red; */
+    overflow: hidden;
     position: relative;
 }
 
@@ -702,7 +706,6 @@ input[type="submit"]:hover {
     background-color: white;
     text-align: left;
     padding: 1em;
-    border:1px solid blue;
     position: relative;
     position: absolute;
 }
@@ -2111,6 +2114,30 @@ label.error {
         margin-left: -15px;
         margin-right: -15px;
     }
+    .wrapper{
+        width: 100%;
+        margin:0 auto;
+        height: 58em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        opacity: 0;
+        animation: fadeIn 2s ease forwards;
+        margin-top: 2em;
+        /* border: 2px solid red; */
+        position: relative;
+        /* overflow: hidden; */
+
+    }
+
+    .my-cart{
+        border-right: none;
+    }
+
+    .my-cart h2{
+        font-size: 2em;
+    }
     /*Mobile Menu*/
     .nav__btn {
         display: block;
@@ -2203,6 +2230,64 @@ label.error {
     }
 }
 @media only screen and (max-width: 800px) {
+
+    .wrapper{
+        width: 100%;
+        margin:0 auto;
+        height: 58em;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        opacity: 0;
+        animation: fadeIn 2s ease forwards;
+        margin-top: 2em;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .my-cart{
+        width: 100%;
+        flex: 0 0 20%;
+        text-align: left;
+        padding-right: 2em;
+        position: relative;
+        z-index: 50;
+        background-color: white;
+        padding:1em;
+    }
+
+    .back-to-shop{
+        padding:.2em;
+        width: 12em;
+        font-size: .8em;
+        left: 1em;
+    }
+
+    .checkout.shipping-resp{
+        overflow: scroll;
+    }
+
+    .checkout.four{
+        overflow: scroll;
+    }
+
+
+    .pages{
+        width: 100%;
+        flex: 1 0 40%;
+        text-align: left;
+        position: relative;
+        z-index: 50;
+    }
+
+    .pages h2{
+        font-size: 2em;
+    }
+    
+
     .box-inner {
         left: 30px;
         top: 15px;

@@ -183,7 +183,7 @@
                                     </form> 
                                 </div> 
 
-                                <div class="checkout radio">
+                                <div class="checkout radio shipping-resp">
                                         <div class="head">
                                             <button><i class="fas fa-arrow-circle-left prev radio"></i></button>
                                             <h2 class="h2-head">Shipping</h2>    
@@ -194,7 +194,7 @@
                                         </div>
                                         <div class="deliver-wrap">
                         
-                                            <p>All loaf orders are sent Monday - Thursday for next day delivery. No Saturday delivery (if you are desperate this can be arranged by request but will require additional freight charges). Last orders and payment for Friday delivery 5pm Wednesday. Any orders placed after this will be despatched Monday for Tuesday delivery. Please make payment and email or txt a screenshot as I don’t have time for chasing. No rural shipping as it takes over two days.</p>
+                                            <p>All loaf orders are sent Monday - Thursday for next day delivery. No Saturday delivery (if desperate get in touch). Last orders and payment for Friday delivery 5pm Wednesday, any orders placed after this will be despatched Monday for Tuesday delivery. No rural shipping as it takes over two days.</p>
                                             <h5>Please select your shipping option.</h5>
                                                 
                                         <form class="radio-wrap form3">
@@ -239,7 +239,7 @@
                                         <p>Please use your name as a reference when paying and notify me when the payment has been made in order for me to commence baking. While it is not neccessary, a screen shot of the payment is helpful.</p>
                                         <p>
                                     </div>
-                                    <h4>Billing Address</h4>
+                                    <h4>Billing / Shipping Address</h4>
                                         <form action="submit" id="validForm" class="form4">
                                                 <div class="form-group col-md-12">
                                                     <input type="text" name="subject" class="form-control" placeholder="Street Address">
