@@ -606,139 +606,122 @@ input[type="submit"]:hover {
         opacity: 1;
     }
 }
-.view-cart{
-    width: 100%;
-    padding: 120px 15px;
+
+
+.wrapper .top{
+    z-index: 100;
+}
+
+.wrapper .hide{
+    z-index: 0;
+}
+
+.show{
+    opacity: 1;
+}
+
+
+.wrapper{
+    width: 70%;
     margin:0 auto;
-    height: 100%;
-    min-height: 70vh;
+    height: 45em;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    position: relative;
     opacity: 0;
     animation: fadeIn 2s ease forwards;
-    margin-top: 1em;
-}
-
-.view-cart .wrapper.top{
-    z-index: 100;
-}
-
-
-.view-cart .wrapper{
-    /* border: 1px solid red; */
-    width:70%;
-    display: flex;
-    height: 100%;
-    padding:1em;
-    position: absolute;
-    z-index: 50;
-    background-color: white;
-    
-}
-
-.view-cart .six{
-    width:70%;
-    height: 100%;
-    padding:1em;
-    display: flex;
-    flex-wrap: wrap;
-    z-index: 50;
-    background-color: white;
-    position: absolute;
-    /* border: 1px solid red; */
-}
-
-.back-to-shop.wrap-6{
-    /* border: 1px solid red; */
-    bottom: -4em;
-    left: 1em;
-}
-
-.view-cart .six h3{
-    flex: 1 0 90%;
-    margin-bottom: .8em;
-    text-align: left;
-}
-
-.view-cart .six .awaiting{
-    flex: 1 0 90%;
-    border-bottom: 1px dotted black;
-    text-align: left;
-}
-
-.view-cart .six .send{
-    flex: 1 0 90%;
-    text-align: left;
-    margin-top: .8em;
-}
-
-.view-cart .six .order{
-    flex: 1 0 90%;
-    border-bottom: 1px dotted black;
-    text-align: left;
-    margin-bottom: .8em;
+    margin-top: 2em;
+    /* border: 2px solid red; */
+    padding: 1em;
 }
 
 
-.view-cart .my-cart{
+.my-cart{
     /* border: 1px solid green; */
-    height: 80%;
+    height: 100%;
     flex: 0 0 40%;
     text-align: left;
-    height: 40em;
     padding-right: 2em;
     border-right: 2px dotted black;
     position: relative;
+    padding: 1em;
+    z-index: 100;
+    background-color: white;
 }
 
-.view-cart .my-cart .cart-items{
+.my-cart .cart-items{
     border-bottom:1px dotted black;
     padding-bottom: 1em;
 }
 
-.view-cart .my-cart .cart-items div{
+.my-cart .cart-items div{
     border: 1px solid black;
     height:3em;
     margin-bottom: 1em;
     margin-right: 1em;
     position: relative;
     padding: 1em 1em 2em 1em;
+    align-content: center;
 }
 
-.view-cart .my-cart .cart-items div i{
+.cart-items div i{
     font-size: 1.5em;
     position: absolute;
     right: .5em;
     bottom: .5em;
 }
 
-.view-cart .my-cart .price{
+.my-cart .price{
     position: relative;
     margin-top: 1em;
-    /* border: 1px solid red; */
 }
 
-.view-cart .wrapper .my-cart .price .price-custom{
+.price .price-custom{
     position: absolute;
     right:1em;
     bottom: -.5em;
-    /* border: 1px solid orange; */
 }
 
-.view-cart .checkout{
-    /* border: 1px solid pink; */
-    height: 80%;
-    flex: 1 0 50%;
+.pages{
+    height: 100%;
+    flex: 1 0 40%;
     text-align: left;
-    height: 30em;
     position: relative;
-    margin-left: 2em;
 }
 
-/* first wrapper back */
+.checkout{
+    position: absolute;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+}
+
+.checkout input:focus-within{
+    outline:none;
+}
+
+.wrapper .overview{
+    width:100%;
+    height: 100%;
+    z-index: 0;
+    background-color: white;
+    text-align: left;
+    padding: 1em;
+    /* border:1px solid blue; */
+    position: relative;
+}
+
+.overview .order,.awaiting,.send{
+    margin-bottom: 1.5em;
+    border-bottom: 1px dotted black;
+}
+
+.overview h3{
+    margin-bottom: 1.5em;
+}
+
 
 .back-to-shop{
     padding:1em;
@@ -749,7 +732,6 @@ input[type="submit"]:hover {
     border-radius: .5em;
     bottom: 0;
     background-color: black;
-    margin-bottom: 4em;
 }
 
 .back-to-shop:hover{
@@ -765,28 +747,20 @@ input[type="submit"]:hover {
     margin-right: .5em;
 }
 
-.back-to-prev{
-    padding:1em;
-    width: 15em;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    border-radius: .5em;
-    bottom: 0;
-    background-color: #FA821A;
+.fa-arrow-circle-left.prev{
+    opacity:1;
+    color:#FA821A;
+    font-size: 3em;
 }
 
-.back-to-prev:hover{
-    background-color: black;
+.fa-arrow-circle-left.prev:hover{
+    color: black;
 }
-
-.back-to-prev a{
-    color: white;
-}
-
-.back-to-prev i{
-    color: white; 
-    margin-right: .5em;
+.head{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-items: center;
+    align-content: center;
 }
 
 
@@ -794,38 +768,28 @@ input[type="submit"]:hover {
 
 .choose{
     position: relative;
-    height: 3em;
+    height: 2em;
     margin-bottom: 1em;
-    /* border: 1px solid blue; */
 }
-.choose .pick{
+.pick,.delivery { 
     position: absolute;
     width: 6em;
-    height: 3em;
+    height: 2em;
     border-radius: .5em;
     text-align: center;
     padding: 1em;
     background-color: black;
     color: white;
-    /* border: 1px solid red; */
-    left: 7em;
+    align-self: auto;
 }
-.choose .delivery{
-    position: absolute;
-    width: 6em;
-    height: 3em;
-    border-radius: .5em;
-    text-align: center;
-    padding: 1em;
-    background-color: black;
-    color: white;
-    /* border: 1px solid red; */
+
+
+.pick{
+    margin-left: 7em;
 }
 
 .pick-wrap{
-    /* border:1px solid red; */
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 }
 
 .choose .delivery:hover{
@@ -847,14 +811,6 @@ input[type="submit"]:hover {
     border: none;
     margin-top: 1px;
     /* border: 1px solid red; */
-}
-
-
-
-/* wrapper three */
-
-.pay p{
-    font-size: 1.2em;
 }
 
 /* radio buttons */
@@ -903,7 +859,7 @@ input[type="submit"]:hover {
 
 
 
-.ms-hero__title {
+/* .ms-hero__title {
     -webkit-transform: scale(1,.5) rotate3d(3,0,1,35deg);
     transform: scale(1,.5) rotate3d(3,0,1,35deg);
     opacity: 0;
@@ -913,7 +869,7 @@ input[type="submit"]:hover {
     transition:opacity .3s ease-out,transform 1s cubic-bezier(.25,.46,.45,.94),-webkit-transform .3s cubic-bezier(.25,.46,.45,.94), margin 1s cubic-bezier(0.77, 0, 0.175, 1);
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-}
+} */
 .ms-hero__subtitle {
     font-size: 1.2em;
     max-width: 500px;
@@ -943,10 +899,10 @@ input[type="submit"]:hover {
     min-height: 75vh;
     align-items: center;
     overflow: inherit;
-    -moz-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+    /* -moz-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
     -webkit-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
     -o-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
-    transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 1s cubic-bezier(0.77, 0, 0.175, 1); */
 }
 .ms-hero__title-poster {
     opacity: 0;
@@ -963,10 +919,10 @@ input[type="submit"]:hover {
     margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
-    -moz-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+    /* -moz-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
     -webkit-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
     -o-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
-    transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 1s cubic-bezier(0.77, 0, 0.175, 1); */
 }
 .ms-hero__title-poster .ms-hero__title {
     margin-top: 30vh;
@@ -987,9 +943,9 @@ input[type="submit"]:hover {
     right: 0;
     bottom: 0;
     border-radius: 4px;
-    transition: height 1s cubic-bezier(0.77, 0, 0.175, 1);
+    /* transition: height 1s cubic-bezier(0.77, 0, 0.175, 1); */
 }
-.ms-hero__image .box-cover {
+/* .ms-hero__image .box-cover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1117,7 +1073,7 @@ input[type="submit"]:hover {
     border: solid 1px;
     transform: scale(1.5);
     animation: puls 2s infinite;
-}
+} */
 @-webkit-keyframes puls {
 0% {
     opacity: 1;
@@ -2047,7 +2003,6 @@ article.ms-section {
     font-weight: 300;
     margin-bottom: 2em;
     background-image: none;
-    border-radius:;
     border: 1px solid;
     border-radius: 3px;
 }
@@ -2065,9 +2020,7 @@ label.error {
     font-size: 12px;
     color: #df1f29;
 }
-/**
-* 10. Footer
-*/
+
 .ms-footer {
     margin: 0 auto;
     width: 100%;

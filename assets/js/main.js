@@ -554,25 +554,24 @@
 	$(function(){
 		$('.layer-1 [type=submit]').on('click', function(e){
 			e.preventDefault();
-			$('.wrapper.one').removeClass('top');
-			$('.wrapper.two').addClass('top');
+			$('.checkout.one').removeClass('top');
+			$('.checkout.two').addClass('top');
+			$('my-cart.back-to-prev').addClass('show');
 		});
 
 		$('.layer-2').on('click', function(e){
 			e.preventDefault();
-			$('.wrapper.two').removeClass('top');
-			$('.wrapper.three').addClass('top');
+			$('.checkout.two').removeClass('top');
+			$('.checkout.three').addClass('top');
 		});
 
 		$('.layer-3').on('click', function(){
-			$('.wrapper.three').removeClass('top');
-			$('.wrapper.four').addClass('top');
+			$('.checkout.three').removeClass('top');
+			$('.checkout.four').addClass('top');
 		});
 
 		$('.layer-4').on('click', function(){
-			$('.wrapper.four').removeClass('top');
-			$('.wrapper.six').addClass('top');
-		});
+			
 	});
 
 	//Go back
