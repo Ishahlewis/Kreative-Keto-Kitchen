@@ -61,7 +61,7 @@
                             <!-- Mobile Menu Button -->
                             <ul class="ms-navbar">
                                 <li class="ms-nav-item link active">
-                                    <a href="index.html">Browse Bakery</a>
+                                    <a href="index.php">Browse Bakery</a>
                                 </li>
                                 <li class="ms-nav-item link">
                                     <a href="about.html" data-type="page-transition">About</a>
@@ -73,7 +73,7 @@
                                     <a href="contact.html" data-type="page-transition">Contact</a>
                                 </li>
                                 <li class="ms-nav-item link">
-                                    <a href="work-single-page.html" data-type="page-transition"><i class="fas fa-shopping-cart"></i></a>
+                                    <a href="cart.php" data-type="page-transition"><i class="fas fa-shopping-cart"></i></a>
                                 </li>
                             </ul>
                         </nav>
@@ -87,26 +87,13 @@
                         <div class="wrapper">
 
                             <div class="overview">
-                                    <h3>Your order has been sent through</h3>
+                                    <h3>Thanks for Ordering with Kreative Keto!</h3>
+                                    <h2>Your order has been submitted!</h2>
 
-                                    <div class="order">
-                                        <h5>Your order</h5>
-                                        <p>item one</p>
-                                        <p>item two</p>
-                                        <h5>Total: <span>price</span></h5>
-                                    </div>
-                                    <div class="awaiting">
-                                        <h5>Internet Bank Transfer- 020152-0046534-83</h5>
-                                        <p>Please use your name as a reference when paying and notify me when the payment has been made in order for me to commence baking. While it is not neccessary, a screen shot of the payment is helpful.</p>
-                                    </div>
-                                    <div class="send">
-                                        <h5>Delivery</h5>
-                                        <p>North Island | 2 - 4 loaves - $18.00</p>
-                                    </div>
                 
-                                        <div class="back-to-shop wrap-6">
-                                            <button><i class="fas fa-arrow-circle-left"></i><a href="index.html"> Continue shopping</a></button>
-                                        </div>
+                                    <div class="back-to-shop wrap-6">
+                                        <button><i class="fas fa-arrow-circle-left"></i><a href="index.html"> Continue shopping</a></button>
+                                    </div>
                             </div>
 
                          <div class="my-cart"> 
@@ -200,17 +187,17 @@
                                         <form class="radio-wrap form3">
                                             <div class="north">
                                                 <h4>North Island</h4>
-                                                <label for="radio" data-target="delivery" data-price="8.50"><input name="delivery"  checked value="10" type="radio">North Island | 1 loaf - $8.50 </label><br>
-                                                <label for="radio" data-target="delivery"  data-price="13.50"><input name="delivery"  value="10"  type="radio">North Island | 2 loaves - $13.50 </label><br>
-                                                <label for="radio"  data-target="delivery"  data-price="16.50"><input name="delivery"  value="10"  type="radio">North Island | 4 loaves - $16.50 </label><br>
-                                                <label for="radio" data-target="delivery"  data-price="7.50"><input name="delivery"  value="10"  type="radio">Auckland | 2 - 4 loaves - $7.50</label><br>
-                                                <label for="radio" data-target="delivery"  data-price="8.50"><input name="delivery"  value="10" type="radio">Whangarei/Hamilton | 2 - 4 loaves - $8.50</label>
+                                                <label for="radio" data-target="delivery" data-price="8.50"><input name="delivery"  checked value="North Island | 1 loaf - $8.50" type="radio">North Island | 1 loaf - $8.50 </label><br>
+                                                <label for="radio" data-target="delivery"  data-price="13.50"><input name="delivery"  value="North Island | 2 loaves - $13.50"  type="radio">North Island | 2 loaves - $13.50 </label><br>
+                                                <label for="radio"  data-target="delivery"  data-price="16.50"><input name="delivery"  value="North Island | 4 loaves - $16.50"  type="radio">North Island | 4 loaves - $16.50 </label><br>
+                                                <label for="radio" data-target="delivery"  data-price="7.50"><input name="delivery"  value="Auckland | 2 - 4 loaves - $7.50"  type="radio">Auckland | 2 - 4 loaves - $7.50</label><br>
+                                                <label for="radio" data-target="delivery"  data-price="8.50"><input name="delivery"  value="Whangarei/Hamilton | 2 - 4 loaves - $8.50" type="radio">Whangarei/Hamilton | 2 - 4 loaves - $8.50</label>
                                             </div>
                                             <div class="south">
                                                 <h4>South Island</h4>
-                                                <label for="radio" data-target="delivery"  data-price="9.50"><input name="delivery"  value="10"  type="radio">South Island | 1 loaf - $9.50</label><br>
-                                                <label for="radio" data-target="delivery"  data-price="17.50"><input name="delivery" value="10"   type="radio">South Island | 2 loaves - $17.50</label><br>
-                                                <label for="radio" data-target="delivery"  data-price="25"><input name="delivery" value="10"  type="radio">South Island | 2 - 6 loaves - $25.00/$30.00</label>
+                                                <label for="radio" data-target="delivery"  data-price="9.50"><input name="delivery"  value="South Island | 1 loaf - $9.50"  type="radio">South Island | 1 loaf - $9.50</label><br>
+                                                <label for="radio" data-target="delivery"  data-price="17.50"><input name="delivery" value="South Island | 2 loaves - $17.50"   type="radio">South Island | 2 loaves - $17.50</label><br>
+                                                <label for="radio" data-target="delivery"  data-price="25"><input name="delivery" value="South Island | 2 - 6 loaves - $25.00"  type="radio">South Island | 2 - 6 loaves - $25.00</label>
                                             </div>
                                         </form> 
                                         <p>To ship 2 - 6 loaves to the South Island, leave a message and I can get back to you on shipping costs.</p>

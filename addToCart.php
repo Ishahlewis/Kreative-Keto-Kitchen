@@ -6,6 +6,7 @@
 	$productKey = $_POST["product-key"];
 	$quantity = $_POST["Quantity"];
 
+
 	if(isset($cart[$productKey]) == false){
 		$cart[$productKey] = $quantity;
 	}else{
@@ -13,6 +14,7 @@
 	}
 
 	 $_SESSION['cart'] = $cart;
+
 
 	header('Location:cart.php');
 
