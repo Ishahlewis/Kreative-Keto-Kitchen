@@ -13,12 +13,12 @@
         <meta name="keywords" content="" />
         <meta name="description" content="Honor - Creative Portfolio HTML Template" />
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="assets/images/ico/favicon-16x16.png"/>
-        <link rel="icon" type="image/png" href="assets/images/ico/favicon-32x32.png"/>
-        <link rel="icon" type="image/png" href="assets/images/ico/favicon-96x96.png"/>
+        <link rel="icon" type="image/png" href="assets/images/works/FaviconLogo.png"/>
+        <link rel="icon" type="image/png" href="assets/images/works/FaviconLogo.png"/>
+        <link rel="icon" type="image/png" href="assets/images/works/FaviconLogo.png"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
         <!-- Page Title -->
-        <title>Honor - Creative Portfolio HTML Template</title>
+        <title>Kreative Keto Kitchen</title>
         <!-- Plugins -->
         <link rel="stylesheet" href="assets/css/plugins.min.css">
         <!-- Custom css file -->
@@ -42,7 +42,7 @@
                     <header class="ms-header">
                         <nav class="ms-nav">
                             <div class="ms-logo">
-                                <a href="index.html" data-type="page-transition">
+                                <a href="index.php" data-type="page-transition">
                                     <img src="assets/images/SVGLogo.svg" alt="logo">
                                 </a>
                             </div>
@@ -87,12 +87,12 @@
                         <div class="wrapper">
 
                             <div class="overview">
-                                    <h3>Thanks for Ordering with Kreative Keto!</h3>
-                                    <h2>Your order has been submitted!</h2>
+                                    <h2>Thanks for Ordering with Kreative Keto!</h2>
+                                    <h4>Your order has been submitted!</h4>
 
                 
-                                    <div class="back-to-shop wrap-6">
-                                        <button><i class="fas fa-arrow-circle-left"></i><a href="index.html"> Continue shopping</a></button>
+                                    <div class="back-home">
+                                        <i class="fas fa-arrow-circle-left"></i><a href="index.php">Continue shopping</a>
                                     </div>
                             </div>
 
@@ -121,7 +121,7 @@
                                     
                                 </div>
                                 <div class="back-to-shop">
-                                <button><i class="fas fa-arrow-circle-left"></i><a href="index.html"> Continue shopping</a></button>                        
+                                <button><i class="fas fa-arrow-circle-left"></i><a href="index.php"> Continue shopping</a></button>                        
                                 </div>
                             </div>
 
@@ -143,6 +143,8 @@
                                         </div>
                                     </form>
                                 </div> 
+
+                                
                              <div class="checkout two">
                                     <div class="head">
                                             <button><i class="fas fa-arrow-circle-left prev two"></i></button>
@@ -243,9 +245,8 @@
                                                     </div>
                                                 </div>
                                         </form>
-                                </div> 
-                                
-                            </div> 
+                                </div>                            
+                            </div>  
 
                         </div>
 

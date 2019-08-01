@@ -698,7 +698,6 @@ input[type="submit"]:focus-within{
 .checkout input:focus-within{
     outline:none;
 }
-
 .wrapper .overview{
     width:100%;
     height: 100%;
@@ -710,15 +709,27 @@ input[type="submit"]:focus-within{
     position: absolute;
 }
 
-.overview .order,.awaiting,.send{
-    margin-bottom: 1.5em;
-    border-bottom: 1px dotted black;
+.overview .back-home{
+    padding: .8em;
+    background-color: black;
+    color: white;
+    border-radius: .5em;
+    width: 13em;
+    font-size: .8em;
+    margin-top:2em;
 }
 
-.overview h3{
-    margin-bottom: 1.5em;
+.back-home:hover{
+    background-color: #FA821A;
 }
 
+.back-home i {
+    margin-right: 1em;
+}
+
+.back-home a{
+    color: white;
+}
 
 .back-to-shop{
     padding:1em;
@@ -2114,26 +2125,7 @@ label.error {
         margin-left: -15px;
         margin-right: -15px;
     }
-    .wrapper{
-        width: 100%;
-        margin:0 auto;
-        height: 58em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        opacity: 0;
-        animation: fadeIn 2s ease forwards;
-        margin-top: 2em;
-        /* border: 2px solid red; */
-        position: relative;
-        /* overflow: hidden; */
 
-    }
-
-    .my-cart{
-        border-right: none;
-    }
 
     .my-cart h2{
         font-size: 2em;
@@ -2234,7 +2226,7 @@ label.error {
     .wrapper{
         width: 100%;
         margin:0 auto;
-        height: 58em;
+        height: 60em;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -2243,20 +2235,21 @@ label.error {
         text-align: center;
         opacity: 0;
         animation: fadeIn 2s ease forwards;
-        margin-top: 2em;
         position: relative;
         overflow: hidden;
+        margin-top: 1em;
     }
 
     .my-cart{
         width: 100%;
-        flex: 0 0 20%;
+        flex: 0 0 30%;
         text-align: left;
         padding-right: 2em;
         position: relative;
         z-index: 50;
         background-color: white;
         padding:1em;
+        border-right: none;
     }
 
     .back-to-shop{
@@ -2264,6 +2257,7 @@ label.error {
         width: 12em;
         font-size: .8em;
         left: 1em;
+        bottom:1em;
     }
 
     .checkout.shipping-resp{
@@ -2275,12 +2269,14 @@ label.error {
     }
 
 
-    .pages{
+    .wrapper .pages{
         width: 100%;
         flex: 1 0 40%;
         text-align: left;
         position: relative;
         z-index: 50;
+        border: 1px dotted black;
+        border-radius: .5em;
     }
 
     .pages h2{
@@ -2316,6 +2312,82 @@ label.error {
     }
 }
 @media only screen and (max-width: 640px) {
+    .ms-container .wrapper{
+        width: 100%;
+        margin:0 auto;
+        height: 45em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        opacity: 0;
+        animation: fadeIn 2s ease forwards;
+        position: relative;
+    }
+
+    .wrapper .my-cart{
+        border-right: none;
+        flex: 0 0 30%;
+    }
+
+    .wrapper .my-cart .back-to-shop{
+        bottom:1em;
+    }
+
+    .wrapper .pages{
+        overflow:scroll;
+        border: 1px dotted black;
+        border-radius: .5em;
+        height: 120%;
+
+    }
+
+    .wrapper .pages .checkout.one{
+        height: 160%;
+    }
+
+    .wrapper .pages .checkout.two{
+        height: 160%;
+    }
+
+    .wrapper .pages .checkout.radio{
+        height: 160%;
+    }
+
+    .wrapper .pages .checkout.four{
+        height: 160%;
+    }
+    .overview .back-home{
+        padding: .8em;
+        background-color: black;
+        color: white;
+        border-radius: .5em;
+        width: 100%;
+        font-size: .8em;
+        margin-top:2em;
+        text-align: center;
+    }
+
+    .ms-popup_cart{
+        /* border:1px solid #FA821A; */
+        height:100vh;
+        position: fixed;
+        width:26em;
+        right: -27em;
+        top:0;
+        background-color:#fff;
+        z-index: 100;
+        padding:6em 2em 2em 2em;
+        display: flex;
+        flex-direction: column;
+        transition: all ease 1s;
+    }
+    
+    .open{
+        right:0;
+        transition: all ease 1s;
+    }
+    
     h1,
     .ms-hero__title h1  {
         font-size: 1.8em;
